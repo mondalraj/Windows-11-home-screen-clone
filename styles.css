@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.taskbar {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(206, 233, 238);
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-taskbar {
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid rgb(0, 0, 0); */
+}
+.center-taskbar {
+  height: 100%;
+  width: 28%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.center-taskbar div {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-taskbar div img {
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.18s ease-in-out;
+}
+
+.center-taskbar div :hover {
+  height: 43px;
+}
+
+.left-taskbar {
+  height: 100%;
+  width: 20%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.left-taskbar > div {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-taskbar div:hover {
+  background-color: #f0ffff;
+  cursor: default;
+}
+
+.date-time {
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lang {
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.internet {
+  padding: 0 10px;
+}
+
+.expand {
+  padding: 0 5px;
+}
+
+.start-window {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.start-window img {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.search-window {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.search-window img {
+  border-radius: 10px;
+}
+
+.active-start {
+  top: 53%;
+}
+
+.active-search {
+  top: 50%;
+}
+
+.active-search img {
+  border-radius: 10px;
+}
